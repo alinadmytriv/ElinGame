@@ -12,3 +12,14 @@ main {
     overflow-y: auto;
     flex-grow: 1;
 }
+
+.hlist {
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow-x: auto;
+}
+
+.hlist .hlist-item {
+    margin-right: 10px;
+}
