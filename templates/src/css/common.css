@@ -14,12 +14,19 @@ main {
 }
 
 .horizontal-list {
-    display: flex;
-    padding-left: 20px;
-    padding-right: 20px;
     overflow-x: auto;
 }
 
-.horizontal-list .horizontal-list-item {
-    margin-right: 10px;
+.horizontal-list-wrap {
+    display: table;
+    padding: 0 20px;
+}
+
+.horizontal-list-item {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.horizontal-list-item:not(:last-child) {
+    padding-right: 10px;
 }
