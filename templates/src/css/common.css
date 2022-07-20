@@ -12,3 +12,10 @@ main {
     overflow-y: auto;
     flex-grow: 1;
 }
+
+.vlist {
+    padding: 20px 20px 30px 20px;
+    display: flex;
+    flex-direction: column;
+    tab-size: 2;
+}
