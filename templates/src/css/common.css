@@ -17,5 +17,8 @@ main {
     padding: 20px 20px 30px 20px;
     display: flex;
     flex-direction: column;
-    tab-size: 2;
+}
+
+.vlist .vlist-item {
+    margin-bottom: 10px;
 }
