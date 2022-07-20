@@ -13,6 +13,24 @@ main {
     flex-grow: 1;
 }
 
+.horizontal-list {
+    overflow-x: auto;
+}
+
+.horizontal-list-wrap {
+    display: table;
+    padding: 0 20px;
+}
+
+.horizontal-list-item {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.horizontal-list-item:not(:last-child) {
+    padding-right: 10px;
+}
+
 .vertical-list {
     padding: 20px;
 }
