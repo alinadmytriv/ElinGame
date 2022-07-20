@@ -30,3 +30,11 @@ main {
 .horizontal-list-item:not(:last-child) {
     padding-right: 10px;
 }
+
+.vertical-list {
+    padding: 20px;
+}
+
+.vertical-list .vertical-list-item {
+    margin-bottom: 10px;
+}
