@@ -12,3 +12,11 @@ main {
     overflow-y: auto;
     flex-grow: 1;
 }
+
+.vertical-list {
+    padding: 20px;
+}
+
+.vertical-list .vertical-list-item {
+    margin-bottom: 10px;
+}
