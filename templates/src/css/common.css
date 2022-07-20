@@ -13,12 +13,10 @@ main {
     flex-grow: 1;
 }
 
-.vlist {
-    padding: 20px 20px 30px 20px;
-    display: flex;
-    flex-direction: column;
+.vertical-list {
+    padding: 20px;
 }
 
-.vlist .vlist-item {
+.vertical-list .vertical-list-item {
     margin-bottom: 10px;
 }
