@@ -5,6 +5,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    font-family: 'Nunito';
 }
 
 main {
@@ -39,4 +40,18 @@ main {
 
 .vertical-list .vertical-list-item {
     margin-bottom: 10px;
+}
+
+.login-button {
+    padding: 5px 0px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.login-button a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 800;
 }
