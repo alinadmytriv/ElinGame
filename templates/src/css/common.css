@@ -5,6 +5,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    font-family: 'Nunito';
 }
 
 main {
@@ -39,4 +40,22 @@ main {
 
 .vertical-list .vertical-list-item {
     margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    background-color: rgba(128, 155, 225, 0.1);
+    border-radius: 10px;
+    border-color: rgba(128, 155, 225, 0.25);
+    font-size: 20px;
+    color: white;
+    padding: 2px 15px;
+}
+
+input::placeholder{
+    color: rgba(135, 161, 185, 0.35);
+}
+
+input:focus{
+    outline: none;
 }
