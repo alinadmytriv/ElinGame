@@ -38,7 +38,7 @@ main {
     padding: 20px;
 }
 
-.vertical-list .vertical-list-item {
+.vertical-list-item {
     margin-bottom: 10px;
 }
 
@@ -46,4 +46,41 @@ main {
     color: rgba(255, 255, 255, 1);
     font-size: 20px;
     font-weight: 700;
+}
+
+input {
+    width: 100%;
+    display: block;
+    background-color: rgba(128, 155, 225, 0.1);
+    border-radius: 10px;
+    border: 1px solid rgba(128, 155, 225, 0.25);
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    padding: 8px 15px;
+}
+
+input::placeholder{
+    color: rgba(135, 161, 185, 0.35);
+}
+
+input:focus{
+    outline: none;
+    border-color: rgba(135, 161, 185, 0.5);
+} 
+
+.login-button {
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 800;
+    display: block;
+}
+
+.login-button.white {
+    color: black;
+    background-color: white;
 }
