@@ -38,7 +38,7 @@ main {
     padding: 20px;
 }
 
-.vertical-list .vertical-list-item {
+.vertical-list-item {
     margin-bottom: 10px;
 }
 
@@ -53,7 +53,7 @@ main {
     display: block;
 }
 
-.white-button {
+.login-button.white {
     color: black;
     background-color: white;
 }
