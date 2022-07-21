@@ -5,6 +5,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    font-family: 'Nunito';
 }
 
 main {
@@ -39,4 +40,10 @@ main {
 
 .vertical-list .vertical-list-item {
     margin-bottom: 10px;
+}
+
+.player-name {
+    color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+    font-weight: 700;
 }
