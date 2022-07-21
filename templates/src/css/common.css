@@ -5,6 +5,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    font-family: 'Nunito';
 }
 
 main {
@@ -39,4 +40,10 @@ main {
 
 .vertical-list .vertical-list-item {
     margin-bottom: 10px;
+}
+
+.section-title {
+    color: rgba(152, 166, 195, 0.5);
+    font-size: 16px;
+    font-weight: 700;
 }
