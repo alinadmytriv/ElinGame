@@ -44,12 +44,14 @@ main {
 
 input {
     width: 100%;
+    display: block;
     background-color: rgba(128, 155, 225, 0.1);
     border-radius: 10px;
-    border-color: rgba(128, 155, 225, 0.25);
+    border: 1px solid rgba(128, 155, 225, 0.25);
     font-size: 20px;
+    font-weight: 700;
     color: white;
-    padding: 2px 15px;
+    padding: 8px 15px;
 }
 
 input::placeholder{
@@ -58,4 +60,5 @@ input::placeholder{
 
 input:focus{
     outline: none;
+    border-color: rgba(135, 161, 185, 0.35);
 }
