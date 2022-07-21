@@ -42,6 +42,12 @@ main {
     margin-bottom: 10px;
 }
 
+.section-title {
+    color: rgba(152, 166, 195, 0.5);
+    font-size: 16px;
+    font-weight: 700;
+}
+
 .player-name {
     color: rgba(255, 255, 255, 1);
     font-size: 20px;
