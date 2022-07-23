@@ -131,3 +131,36 @@ input:focus{
     font-size: 14px;
     color: rgba(135, 161, 185, 0.35);
 }
+
+.player-result{
+    display: flex;
+}
+
+.player-place {
+    padding: 0px 15px 0px 15px;
+    margin-right: 22px;
+    border: 2px solid rgba(128, 155, 225, 0.25);
+    border-radius: 10px;
+    color: white;
+    font-weight: 800;
+    font-size: 36px;
+    text-align: center;
+}
+
+.rresult-details{
+    height: 48px;
+}
+
+.player-name-result {
+    margin-bottom: -7px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+}
+
+.player-final-score {
+    height: 36px;
+    font-weight: 800;
+    font-size: 36px;
+    color: white;
+}
