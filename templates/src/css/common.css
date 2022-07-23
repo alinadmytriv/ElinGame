@@ -401,3 +401,11 @@ input:focus{
     color: rgba(152, 166, 195, 0.5);
     text-align: center;
 }
+
+input[type="search"] {
+    background-color: transparent;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    display: none;
+}
