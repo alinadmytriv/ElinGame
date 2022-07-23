@@ -93,6 +93,27 @@ input:focus{
     background-color: white;
 }
 
+.pack-button {
+    display: block;
+    padding: 10px 15px 10px 15px;
+    text-decoration: none;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgba(128, 155, 225, 0.1);
+    position: relative;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+}
+
+.pack-button::after{
+    content: '';
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    right: 5px;
+}
+
 .topic-name {
     font-weight: 900;
     font-size: 22px;
