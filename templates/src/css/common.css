@@ -97,6 +97,7 @@ input:focus{
     border: 2px solid rgba(128, 155, 225, 0.25);
     border-radius: 10px;
     padding: 12px 16px;
+    padding-right: 24px;
     padding-top: 14px;
 
     transition: background-color 0.5s, border-color 0.5s;
