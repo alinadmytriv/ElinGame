@@ -132,6 +132,20 @@ input:focus{
     color: rgba(135, 161, 185, 0.35);
 }
 
+.img-button {
+    padding: 14px 0px;
+    background-color: rgba(128, 155, 225, 0.1);
+    border-radius: 10px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.img-button img {
+    height: 20px;
+    display: inline-block;
+}
+
 .two-columns {
     display: flex;
     flex-wrap: wrap;
