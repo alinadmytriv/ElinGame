@@ -90,3 +90,26 @@ input:focus{
     color: black;
     background-color: white;
 }
+
+.room-name-elem {
+    text-decoration: none;
+}
+
+.room-name-div {
+    width: 100%;
+    padding: 12px 0px 12px 20px;
+    background-color: rgba(128, 155, 225, 0.1);
+    border-radius: 10px;
+}
+
+.room-name {
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+}
+
+.room-name-players-amount {
+    font-weight: 700;
+    font-size: 14px;
+    color: rgba(135, 161, 185, 0.35);
+}
