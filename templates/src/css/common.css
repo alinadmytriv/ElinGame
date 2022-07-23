@@ -90,3 +90,32 @@ input:focus{
     color: black;
     background-color: white;
 }
+
+.pack-button {
+    display: block;
+    padding: 10px 15px 10px 15px;
+    text-decoration: none;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgba(128, 155, 225, 0.1);
+    position: relative;
+}
+
+.pack-button::after{
+    content: '';
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    margin-top: -16px;
+    background: url('../img/icons/arr-1.svg') no-repeat center center;
+    background-size: contain;
+}
+
+.pack-button-text {
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+}
