@@ -90,3 +90,16 @@ input:focus{
     color: black;
     background-color: white;
 }
+
+.question-score {
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 900;
+    color: white;
+    display: block;
+    background-color: rgba(128, 155, 225, 0.25);
+}
