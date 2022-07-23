@@ -96,3 +96,38 @@ input:focus{
     font-size: 22px;
     color: white;
 }
+
+.room-button {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 12px 15px 12px 20px;
+    background-color: rgba(128, 155, 225, 0.1);
+    border-radius: 10px;
+    position: relative;
+}
+
+.room-button::after {
+    content: '';
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    margin-top: -16px;
+    background: url('../img/icons/arr-1.svg') no-repeat center center;
+    background-size: contain;
+}
+
+.room-name {
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+}
+
+.room-details {
+    font-weight: 700;
+    font-size: 14px;
+    color: rgba(135, 161, 185, 0.35);
+}
