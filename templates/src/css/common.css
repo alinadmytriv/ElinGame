@@ -132,29 +132,31 @@ input:focus{
     color: rgba(135, 161, 185, 0.35);
 }
 
-.two-buttons {
-    width: 100%;
+.two-columns {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
 }
 
-.two-buttons button {
-    flex-grow: 1;
-    padding: 10px 10px;
-    border-radius: 10px;
-    font-weight: 800;
-    font-size: 20px;
-    color: white;
-    text-align: center;
-    border: none;
-    cursor: pointer;
+.two-columns .column {
+    width: 50%;
 }
 
-.right-button {
+.two-columns .column:first-child {
+    padding-right: 10px;
+}
+
+.two-columns .column:not(:first-child) {
+    padding-left: 10px;
+}
+
+.login-button.green {
+    color: rgba(255, 255, 255, 1);
     background-color: rgba(68, 182, 120, 1);
 }
 
-.wrong-button {
+.login-button.red {
+    color: rgba(255, 255, 255, 1);
     background-color: rgba(201, 49, 103, 1);
 }
