@@ -402,10 +402,6 @@ input:focus{
     text-align: center;
 }
 
-input[type="search"] {
+input.search {
     background-color: transparent;
-}
-
-input[type="search"]::-webkit-search-cancel-button {
-    display: none;
 }
