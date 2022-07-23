@@ -91,21 +91,101 @@ input:focus{
     background-color: white;
 }
 
-.player-score-elem {
+.player-score {
+    position: relative;
     border: 2px solid rgba(128, 155, 225, 0.25);
     border-radius: 10px;
-    padding: 10px 15px 5px 15px;
+    padding: 12px 16px;
+    padding-top: 14px;
+
+    transition: background-color 0.5s, border-color 0.5s;
+    -o-transition: background-color 0.5s, border-color 0.5s;
+    -ms-transition: background-color 0.5s, border-color 0.5s;
+    -moz-transition: background-color 0.5s, border-color 0.5s;
+    -webkit-transition: background-color 0.5s, border-color 0.5s;
+    transition-delay: 2s;
+    -o-transition-delay: 2s;
+    -ms-transition-delay: 2s;
+    -moz-transition-delay: 2s;
+    -webkit-transition-delay: 2s;
 }
 
-.player-name-in-score {
-    margin: -2px 0px;
+.player-score.green {
+    border-color: rgba(68, 182, 120, 1);
+    background-color: rgba(68, 182, 120, 1);
+
+    transition-duration: 0s;
+    -o-transition-duration: 0s;
+    -ms-transition-duration: 0s;
+    -moz-transition-duration: 0s;
+    -webkit-transition-duration: 0s;
+}
+
+.player-score.red {
+    border-color: rgba(201, 49, 103, 1);
+    background-color: rgba(201, 49, 103, 1);
+}
+
+.player-score.active {
+    border-color: rgba(255, 255, 255, 1);
+}
+
+.player-score-name {
     font-weight: 700;
     font-size: 14px;
+    line-height: 12px;
     color: white;
 }
 
-.player-score {
-    font-weight: 1000;
+.player-score-value {
+    font-weight: 900;
     font-size: 24px;
+    line-height: 20px;
+    margin-top: 7px;
     color: white;
+}
+
+.player-score .score {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 4px;
+    font-size: 24px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.player-score.green .score, .player-score.red .score {
+    display: block;
+    animation: score 2.4s infinite ease-out;
+}
+
+.player-score.red .score {
+    color: rgba(201, 49, 103, 1);
+}
+
+.player-score.green .score {
+    color: rgba(68, 182, 120, 1);
+}
+
+@keyframes score {
+    0% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 1;
+    }
+    
+    95% {
+        opacity: 0; 
+    }
+
+    100% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
 }
