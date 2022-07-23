@@ -131,3 +131,30 @@ input:focus{
     font-size: 14px;
     color: rgba(135, 161, 185, 0.35);
 }
+
+.two-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.two-buttons button {
+    flex-grow: 1;
+    padding: 10px 10px;
+    border-radius: 10px;
+    font-weight: 800;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+.right-button {
+    background-color: rgba(68, 182, 120, 1);
+}
+
+.wrong-button {
+    background-color: rgba(201, 49, 103, 1);
+}
