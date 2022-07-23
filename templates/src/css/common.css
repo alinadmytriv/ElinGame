@@ -160,3 +160,13 @@ input:focus{
     color: rgba(255, 255, 255, 1);
     background-color: rgba(201, 49, 103, 1);
 }
+
+.hint {
+    display: block;
+    border-top: 2px solid rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    color: rgba(152, 166, 195, 0.5);
+    text-align: center;
+}
