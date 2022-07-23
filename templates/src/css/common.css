@@ -97,7 +97,7 @@ input:focus{
 
 .room-name-div {
     width: 100%;
-    padding: 12px 0px 12px 20px;
+    padding: 12px 15px 12px 20px;
     background-color: rgba(128, 155, 225, 0.1);
     border-radius: 10px;
 }
