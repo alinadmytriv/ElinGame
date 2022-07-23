@@ -132,6 +132,35 @@ input:focus{
     color: rgba(135, 161, 185, 0.35);
 }
 
+.two-columns {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+.two-columns .column {
+    width: 50%;
+}
+
+.two-columns .column:first-child {
+    padding-right: 10px;
+}
+
+.two-columns .column:not(:first-child) {
+    padding-left: 10px;
+}
+
+.login-button.green {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(68, 182, 120, 1);
+}
+
+.login-button.red {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(201, 49, 103, 1);
+}
+
 .hint {
     display: block;
     border-top: 2px solid rgba(0, 0, 0, 0.2);
