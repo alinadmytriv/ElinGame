@@ -91,6 +91,12 @@ input:focus{
     background-color: white;
 }
 
+.topic-name {
+    font-weight: 900;
+    font-size: 22px;
+    color: white;
+}
+
 .room-button {
     text-decoration: none;
     display: block;
