@@ -360,7 +360,7 @@ input:focus{
     flex-grow: 1;
 }
 
-.header .side .img-button, .pack-questions .side .img-button {
+.header .side, .pack-questions .side {
     width: 48px;
 }
 
