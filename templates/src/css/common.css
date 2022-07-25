@@ -10,18 +10,10 @@ body {
     font-family: 'Nunito';
 }
 
-header {
-    padding: 30px 20px 10px 20px;
-}
-
 main {
     background-color: rgba(0, 0, 0, 0.1);
     overflow-y: auto;
     flex-grow: 1;
-}
-
-footer {
-    padding: 20px 20px 30px 20px;
 }
 
 .horizontal-list {
