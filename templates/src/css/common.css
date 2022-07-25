@@ -358,6 +358,15 @@ input:focus{
 
 .header .column:not(.side), .pack-questions .column:not(.side) {
     flex-grow: 1;
+    padding: 0 10px;
+}
+
+.header .column:not(.side):first-child, .pack-questions .column:not(.side):first-child {
+    padding-left: 0;
+}
+
+.header .column:not(.side):last-child, .pack-questions .column:not(.side):last-child {
+    padding-right: 0;
 }
 
 .header .side, .pack-questions .side {
@@ -373,14 +382,6 @@ input:focus{
 
 .two-columns .column {
     width: 50%;
-}
-
-.two-columns .column:first-child, .pack-questions .column:first-child {
-    padding-right: 10px;
-}
-
-.two-columns .column:not(:first-child), .pack-questions .column:not(:first-child) {
-    padding-left: 10px;
 }
 
 .button.green {
@@ -403,4 +404,8 @@ input:focus{
 
 input.search {
     background-color: transparent;
+}
+
+header > .vertical-list, footer > .vertical-list {
+    padding: 10px 20px;
 }
