@@ -40,7 +40,7 @@ main {
     padding: 20px;
 }
 
-.vertical-list-item {
+.vertical-list-item:not(:last-child) {
     margin-bottom: 10px;
 }
 
