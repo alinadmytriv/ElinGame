@@ -376,11 +376,11 @@ input:focus{
 }
 
 .two-columns .column:first-child, .pack-questions .column:first-child {
-    padding-right: 10px;
+    margin-right: 10px;
 }
 
 .two-columns .column:not(:first-child), .pack-questions .column:not(:first-child) {
-    padding-left: 10px;
+    margin-left: 10px;
 }
 
 .button.green {
