@@ -291,7 +291,7 @@ input:focus{
     align-items: center;
 }
 
-.header {
+.header, .pack-questions {
     display: flex;
     align-items: center;
 }
@@ -356,11 +356,11 @@ input:focus{
     margin-top: 5px;
 }
 
-.header .column:not(.side) {
+.header .column:not(.side), .pack-questions .column:not(.side) {
     flex-grow: 1;
 }
 
-.header .side .img-button {
+.header .side .img-button, .pack-questions .side .img-button {
     width: 48px;
 }
 
@@ -375,11 +375,11 @@ input:focus{
     width: 50%;
 }
 
-.two-columns .column:first-child {
+.two-columns .column:first-child, .pack-questions .column:first-child {
     padding-right: 10px;
 }
 
-.two-columns .column:not(:first-child) {
+.two-columns .column:not(:first-child), .pack-questions .column:not(:first-child) {
     padding-left: 10px;
 }
 
