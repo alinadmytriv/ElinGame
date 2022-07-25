@@ -395,7 +395,6 @@ input:focus{
 
 .hint {
     display: block;
-    padding-top: 10px;
     font-weight: 700;
     font-size: 14px;
     color: rgba(152, 166, 195, 0.5);
