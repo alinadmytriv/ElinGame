@@ -56,8 +56,14 @@ main {
     font-weight: 700;
 }
 
-input {
+textarea {
+    min-height: 130px;
+    min-width: 100%;
+}
+
+input, textarea {
     width: 100%;
+    max-width: 100%;
     display: block;
     background-color: rgba(128, 155, 225, 0.1);
     border-radius: 10px;
@@ -68,11 +74,11 @@ input {
     padding: 8px 15px;
 }
 
-input::placeholder{
+input::placeholder, textarea::placeholder {
     color: rgba(135, 161, 185, 0.35);
 }
 
-input:focus{
+input:focus, textarea:focus {
     outline: none;
     border-color: rgba(135, 161, 185, 0.5);
 } 
@@ -402,7 +408,7 @@ input:focus{
     text-align: center;
 }
 
-input.search {
+input.search, textarea.search {
     background-color: transparent;
 }
 
