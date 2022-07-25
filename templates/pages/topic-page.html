@@ -95,7 +95,7 @@
                     </div>
                     <div class="column side">
                         
-                        <a href="#" class="img-button">
+                        <a href="#" class="img-button" id="question-type">
                             <img src="../src/img/icons/text.svg" alt="">
                         </a>
         
@@ -108,11 +108,33 @@
             </div>
 
             <div class="vertical-list-item">
-                <div class="hint">Додання питання у тему</div>
+                <div class="hint">Створення теми</div>
             </div>
         </div>
 
     </footer>
+
+    <script>
+        let type = 0;
+        
+        const button = document.getElementById('question-type');
+        const types = [
+            'text.svg',
+            'img.svg',
+            'song.svg',
+            'video.svg',
+        ];
+
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            if (++type > types.length-1) {
+                type = 0;
+            }
+
+            button.children[0].setAttribute('src', `../src/img/icons/${ types[type] }`)
+        });
+    </script>
 
     <script src="../src/js/common.js"></script>
 </body>
