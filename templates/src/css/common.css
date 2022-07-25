@@ -415,3 +415,7 @@ input.search, textarea.search {
 header > .vertical-list, footer > .vertical-list {
     padding: 10px 20px;
 }
+
+footer > .vertical-list {
+    padding-top: 16px;
+}
