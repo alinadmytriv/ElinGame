@@ -426,6 +426,14 @@ input.search, textarea.search {
     background-color: transparent;
 }
 
+header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+
 header > .vertical-list, footer > .vertical-list {
     padding: 10px 20px;
 }
