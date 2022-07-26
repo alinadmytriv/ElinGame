@@ -22,6 +22,15 @@ main {
     margin-right: -20px;
 }
 
+.horizontal-list::-webkit-scrollbar, main::-webkit-scrollbar {
+    display: none;
+}
+
+.horizontal-list.topic-questions {
+    padding: 12px 0px;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
 .horizontal-list-wrap {
     display: table;
     padding: 0 20px;
