@@ -109,15 +109,18 @@
         input.addEventListener('input', function(e) {
             e.preventDefault();
             
-            const password = input.value;
-            if (password.length == 0) {
-                button.style.pointerEvents = 'none';
-                button.style.background = 'rgba(255, 255, 255, 0.4)';
-            } else if (password.length >= 1) {
-                button.style.pointerEvents = 'auto';
-                button.style.background = 'rgba(255, 255, 255, 1)';
-            }
+            validateButton();
         });
+
+        function validateButton() {
+            if (input.value.length == 0) {
+                button.setAttribute('data-disabled', '');
+            } else {
+                button.removeAttribute('data-disabled');
+            }
+        }
+
+        validateButton();
         
     </script>
 

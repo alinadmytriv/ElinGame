@@ -98,7 +98,7 @@ input:focus, textarea:focus {
     text-overflow: ellipsis;
 }
 
-#enter-room {
+.button[data-disabled] {
     pointer-events: none;
     background-color: rgba(255, 255, 255, 0.4);
 }
