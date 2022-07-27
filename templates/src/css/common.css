@@ -441,3 +441,19 @@ header > .vertical-list, footer > .vertical-list {
 footer > .vertical-list {
     padding-top: 16px;
 }
+
+.time-bar {
+    height: 7px;
+    width: 50%;
+    background-color: white;
+}
+
+.question-song img {
+    height: 75%;
+    width: 100%;
+}
+
+.question-text, .question-image, .question-song, .question-video {
+    margin-left: -20px;
+    margin-right: -20px;
+}
