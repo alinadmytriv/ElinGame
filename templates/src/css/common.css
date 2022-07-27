@@ -457,11 +457,6 @@ footer > .vertical-list {
     background-color: white;
 }
 
-.vertical-list-item.question-field {
-    text-align: center;
-    vertical-align: middle;
-}
-
 .question-text {
     color: white;
     font-size: 22px;
