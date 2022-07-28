@@ -192,14 +192,14 @@
         }
 
         function validateButton() {
-            if (Selected() == '') {
+            if (oneSelected() == '') {
                 button.setAttribute('data-disabled', '');
             } else {
                 button.removeAttribute('data-disabled');
             }
         }
 
-        function Selected() {
+        function oneSelected() {
             for (let i =0; i < topics.length; i++) {
                 if (topics[i].getAttribute('data-selected') != null) {
                     return topics[i];
@@ -211,7 +211,7 @@
         validateButton();
 
         function removeTopic(){
-            let topic = Selected();
+            let topic = oneSelected();
             topic.setAttribute('data-removed', '');
             topic.removeAttribute('data-selected');
         }
