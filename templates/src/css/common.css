@@ -497,3 +497,9 @@ main.center {
 main.center > div {
     margin: auto;
 }
+
+.final-topic {
+    color: white;
+    font-size: 38px;
+    font-weight: 900;
+}
