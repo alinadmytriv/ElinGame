@@ -228,6 +228,15 @@ input:focus, textarea:focus {
     overflow: hidden;
 }
 
+.question-score.topic-final[data-selected] {
+    color: black;
+    background-color: white;
+}
+
+.question-score.topic-final[data-removed] {
+    display: none;
+}
+
 .question-score::after {
     content: '';
     position: absolute;
@@ -405,6 +414,14 @@ input:focus, textarea:focus {
     width: 50%;
 }
 
+.two-columns .column:first-child {
+    padding-right: 10px;
+}
+
+.two-columns .column:last-child {
+    padding-left: 10px;
+}
+
 .button.green {
     color: rgba(255, 255, 255, 1);
     background-color: rgba(68, 182, 120, 1);
@@ -500,4 +517,10 @@ main.center > div {
 
 .button.download-pack {
     cursor: pointer;
+}
+
+.final-topic {
+    color: white;
+    font-size: 38px;
+    font-weight: 900;
 }
