@@ -506,6 +506,19 @@ main.center > div {
     margin: auto;
 }
 
+#file {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.button.download-pack {
+    cursor: pointer;
+}
+
 .final-topic {
     color: white;
     font-size: 38px;
