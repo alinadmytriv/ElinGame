@@ -488,3 +488,27 @@ main.center {
 main.center > div {
     margin: auto;
 }
+
+.img-button#pause {
+    cursor: pointer;
+}
+
+.vertical-list.game-field[data-paused] {
+    pointer-events: none;
+    filter: brightness(40%);
+}
+
+main[data-paused] {
+    overflow-y: hidden;
+}
+
+main[data-paused]::before {
+    content: 'Пауза';
+    top: 40%;
+    left: 40%;
+    position: absolute;
+    font-weight: 900;
+    font-size: 48px;
+    color: white;
+    z-index: 1;
+}
