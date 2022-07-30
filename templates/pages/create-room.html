@@ -81,13 +81,13 @@
 
     <script>
 
-        var input = document.getElementById('file')
-        var label	 = input.nextElementSibling,
-            labelVal = label.innerHTML;
+        const input = document.getElementById('file')
+        const label	 = input.nextElementSibling;
+        const labelVal = label.innerHTML;
         
         input.addEventListener( 'change', function( e )
         {
-            var fileName = e.target.value.split( '\\' ).pop();
+            const fileName = e.target.value.split( '\\' ).pop();
 
             if(fileName)
                 label.innerHTML = fileName;
