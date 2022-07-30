@@ -228,6 +228,15 @@ input:focus, textarea:focus {
     overflow: hidden;
 }
 
+.question-score.topic-final[data-selected] {
+    color: black;
+    background-color: white;
+}
+
+.question-score.topic-final[data-removed] {
+    display: none;
+}
+
 .question-score::after {
     content: '';
     position: absolute;
@@ -495,4 +504,10 @@ main.center {
 
 main.center > div {
     margin: auto;
+}
+
+.final-topic {
+    color: white;
+    font-size: 38px;
+    font-weight: 900;
 }
