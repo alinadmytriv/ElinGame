@@ -506,6 +506,47 @@ main.center > div {
     margin: auto;
 }
 
+*[data-popup-link] {
+    position: relative;
+    z-index: 10;
+}
+
+*[data-popup-link].opened .state-closed {
+    display: none;
+}
+
+*[data-popup-link]:not(.opened) .state-opened {
+    display: none;
+}
+
+.popup {
+    z-index: 5;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(38, 45, 57, 0.75);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.popup:not(.active) {
+    display: none;
+}
+
+.popup .wrap {
+    margin: auto 0;
+}
+
+.popup-name {
+    font-weight: 900;
+    font-size: 48px;
+    color: white;
+    text-align: center;
+}
+
 #file {
 	width: 0.1px;
 	height: 0.1px;
