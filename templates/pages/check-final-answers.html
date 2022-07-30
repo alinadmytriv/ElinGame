@@ -1,0 +1,249 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frame</title>
+    <link href="../src/css/reset.css" rel="stylesheet">
+    <link href="../src/css/common.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="vertical-list">
+            <div class="vertical-list-item">
+
+                <div class="header">
+                    <div class="column side">
+
+                        <a href="#" class="img-button">
+                            <img src="../src/img/icons/arr-left.svg" alt="">
+                        </a>
+
+                    </div>
+                    <div class="column">
+
+                        <div class="window-title">Фінал</div>
+
+                    </div>
+                    <div class="column side">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="time-bar"></div>
+    </header>
+    <main>
+
+        <div class="vertical-list">
+            <div class="vertical-list-item">
+                <div class="section-title">Віталік</div>
+                <div class="player-name">Якась відповідь</div>
+            </div>
+            <div class="vertical-list-item">
+                <div class="two-columns">
+                    <div class="column">
+                        <a href="#" class="button white" id="green">Правильно</a>
+                    </div>
+                    <div class="column">
+                        <a href="#" class="button white" id="red">Неправильно</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vertical-list-item">
+                <div class="section-title">Віталік</div>
+                <div class="player-name">Якась відповідь</div>
+            </div>
+            <div class="vertical-list-item">
+                <div class="two-columns">
+                    <div class="column">
+
+                        <a href="#" class="button white" id="green">Правильно</a>
+
+                    </div>
+                    <div class="column">
+
+                        <a href="#" class="button white" id="red">Неправильно</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="vertical-list-item">
+                <div class="section-title">Віталік</div>
+                <div class="player-name">Якась відповідь</div>
+            </div>
+            <div class="vertical-list-item">
+                <div class="two-columns">
+                    <div class="column">
+
+                        <a href="#" class="button white" id="green">Правильно</a>
+
+                    </div>
+                    <div class="column">
+
+                        <a href="#" class="button white" id="red">Неправильно</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="vertical-list-item">
+                <div class="section-title">Віталік</div>
+                <div class="player-name">Якась відповідь</div>
+            </div>
+            <div class="vertical-list-item">
+                <div class="two-columns">
+                    <div class="column">
+
+                        <a href="#" class="button white" id="green">Правильно</a>
+
+                    </div>
+                    <div class="column">
+
+                        <a href="#" class="button white" id="red">Неправильно</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="vertical-list-item">
+                <div class="section-title">Віталік</div>
+                <div class="player-name">Якась відповідь</div>
+            </div>
+            <div class="vertical-list-item">
+                <div class="two-columns">
+                    <div class="column">
+
+                        <a href="#" class="button white" id="green">Правильно</a>
+
+                    </div>
+                    <div class="column">
+
+                        <a href="#" class="button white" id="red">Неправильно</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="vertical-list-item">
+                <div class="section-title">Віталік</div>
+                <div class="player-name">Якась відповідь</div>
+            </div>
+            <div class="vertical-list-item">
+                <div class="two-columns">
+                    <div class="column">
+
+                        <a href="#" class="button white" id="green">Правильно</a>
+
+                    </div>
+                    <div class="column">
+
+                        <a href="#" class="button white" id="red">Неправильно</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="vertical-list-item">
+                <div class="section-title">Віталік</div>
+                <div class="player-name">Якась відповідь</div>
+            </div>
+            <div class="vertical-list-item">
+                <div class="two-columns">
+                    <div class="column">
+
+                        <a href="#" class="button white" id="green">Правильно</a>
+
+                    </div>
+                    <div class="column">
+
+                        <a href="#" class="button white" id="red">Неправильно</a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+    </main>
+    <footer>
+
+        <div class="vertical-list">
+            <div class="vertical-list-item">
+                <div class="section-title">Правильно</div>
+                <div class="player-name">Пісня "Ой у лузі червона калина"</div>
+            </div>
+            <div class="vertical-list-item">
+                <a class="button" id="all_checked" href="#">Готово</a>
+            </div>
+
+            <div class="vertical-list-item">
+                <div class="hint">Перевірка відповідей фіналу</div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script>
+
+        const btns = document.getElementsByClassName('two-columns');
+        const answers_amount = btns.length;
+        let not_checked;
+        
+        const button_done = document.getElementById('all_checked');
+        
+        Array.prototype.forEach.call(btns, function(two_btns) {
+            const btn = two_btns.getElementsByClassName('button');
+            const green = btn['green'], red = btn['red'];
+            
+            green.addEventListener('click', function(e) {
+                if(green.classList.contains('white')) {
+                    changeColor(green, 'green');
+                    changeColor(red, 'white');
+                } else {
+                    changeColor(green, 'white');
+                }
+            });
+
+            red.addEventListener('click', function(e) {
+                if(red.classList.contains('white')) {
+                    changeColor(red, 'red');
+                    changeColor(green, 'white');
+                } else {
+                    changeColor(red, 'white');
+                }
+            });
+
+            function changeColor(btn, color) {
+                btn.classList.remove(btn.classList[1]);
+                btn.classList.add(color);
+
+            };
+        });
+
+        window.addEventListener('click', function(e){
+            e.preventDefault();
+            
+            not_checked = document.getElementsByClassName('white').length;
+
+            validateButton();
+        });
+
+        function validateButton() {
+            if (answers_amount != not_checked) {
+                button_done.setAttribute('data-disabled', '');
+            } else {
+                button_done.removeAttribute('data-disabled');
+            }
+        }
+
+        validateButton();
+
+    </script>
+
+    <script src="../src/js/common.js"></script>
+</body>
+</html>
