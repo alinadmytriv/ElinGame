@@ -27,8 +27,9 @@
                     </div>
                     <div class="column side">
 
-                        <a class="img-button" id="pause">
-                            <img src="../src/img/icons/pause.svg" alt="">
+                        <a href="#" class="img-button" data-popup-link="pause">
+                            <img class="state-closed" src="../src/img/icons/pause.svg" alt="">
+                            <img class="state-opened" src="../src/img/icons/play.svg" alt="">
                         </a>
 
                     </div>
@@ -335,23 +336,40 @@
 
     </footer>
 
-    <script>
-    
-        const pause = document.getElementById('pause');
-        const main = document.getElementsByTagName('main')[0];
-        const game = document.getElementsByClassName('game-field')[0];
+    <div class="popup" data-popup="pause">
+        <div class="wrap">
+            <div class="popup-name">Пауза</div>
+        </div>
+    </div>
 
-        pause.addEventListener('click', function(e) {
-            if (main.hasAttribute('data-paused')) {
-                pause.firstElementChild.src = "../src/img/icons/pause.svg";
-                game.removeAttribute('data-paused');
-                main.removeAttribute('data-paused');
-            } else {
-                pause.firstElementChild.src = "../src/img/icons/play.svg";
-                game.setAttribute('data-paused', '');
-                main.setAttribute('data-paused' ,'');
+    <script>
+        function popupHandler(button, popup) {
+            return (e) => {
+                if(popup.classList.contains('active')) {
+                    button.classList.remove('opened');
+                    popup.classList.remove('active');
+                    return;
+                }
+
+                button.classList.add('opened');
+                popup.classList.add('active');
             }
-        });
+        }
+
+        const links = document.getElementsByTagName('a');
+        const popupElements = document.getElementsByClassName('popup');
+
+        const popups = {};
+
+        for (let popup of popupElements) {
+            popups[popup.getAttribute('data-popup')] = popup;
+        }
+
+        for (let link of links) {
+            if(link.hasAttribute('data-popup-link')) {
+                link.addEventListener('click', popupHandler(link, popups[link.getAttribute('data-popup-link')]));
+            }
+        }
     
     </script>
 

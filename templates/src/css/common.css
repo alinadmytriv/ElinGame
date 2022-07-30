@@ -489,26 +489,43 @@ main.center > div {
     margin: auto;
 }
 
-.img-button#pause {
-    cursor: pointer;
+*[data-popup-link] {
+    position: relative;
+    z-index: 10;
 }
 
-.vertical-list.game-field[data-paused] {
-    pointer-events: none;
-    filter: brightness(40%);
+*[data-popup-link].opened .state-closed {
+    display: none;
 }
 
-main[data-paused] {
-    overflow-y: hidden;
+*[data-popup-link]:not(.opened) .state-opened {
+    display: none;
 }
 
-main[data-paused]::before {
-    content: 'Пауза';
-    top: 40%;
-    left: 40%;
-    position: absolute;
+.popup {
+    z-index: 5;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(38, 45, 57, 0.75);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.popup:not(.active) {
+    display: none;
+}
+
+.popup .wrap {
+    margin: auto 0;
+}
+
+.popup-name {
     font-weight: 900;
     font-size: 48px;
     color: white;
-    z-index: 1;
+    text-align: center;
 }
