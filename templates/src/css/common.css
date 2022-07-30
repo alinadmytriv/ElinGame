@@ -405,6 +405,14 @@ input:focus, textarea:focus {
     width: 50%;
 }
 
+.two-columns .column:first-child {
+    padding-right: 10px;
+}
+
+.two-columns .column:last-child {
+    padding-left: 10px;
+}
+
 .button.green {
     color: rgba(255, 255, 255, 1);
     background-color: rgba(68, 182, 120, 1);
